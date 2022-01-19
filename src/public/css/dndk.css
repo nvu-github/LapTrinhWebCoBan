@@ -1,0 +1,159 @@
+.modal{
+    display: flex;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    
+}
+.modal{
+    display: none;
+    padding-top: 25vh;
+}
+.modal__bg
+{
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    border: 1px solid #888;
+    width: 900px;
+    height: 400px;
+    overflow: hidden;
+}
+.modal__content{    
+    position: absolute;
+    display: flex;
+    
+    
+}
+.modal__dn {
+    width: 50%;
+    padding: 10px 50px;
+    border-right:1px solid rgb(212, 212, 212);
+    margin: 20px 0px;
+}
+.modal__dn label{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.mkdn{
+    margin-top: 20px;
+
+}
+#tdn,#mkdn,#tdk{
+    width: 100%;
+    height: 40px;
+    border:1px solid rgb(185, 185, 185);
+    font-size: 1.5rem;
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+    appearance: none;
+    outline: 0;
+    
+}
+#mkdn{
+    position: relative;
+}
+.btn__eye{display: flex;
+    width: 42px;
+    height: 42px;
+    background-color: #fff;
+    position: absolute;
+    top: 48.7%;
+    right: 55.1%;
+    border: none;
+    border-left: 1px solid rgb(185, 185, 185);
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+    cursor: pointer;
+}
+.btn__eye img{
+    
+    width: 100%;
+    margin: auto;
+}
+
+.remember{
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+.remember label{
+    margin-left: 20px;
+}
+.btnloggin,.btnsignup{
+    background-color: var(--back-color);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    border:gray 1px solid;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.fogotmk{
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+.fogotmk a{
+    text-decoration: none;
+    color: black;
+}
+.modal__dk{
+    padding: 10px 50px;
+    margin: 20px 0px;
+    width: 50%;
+    font-size: 1.5rem;
+    line-height: 20px;
+}
+.modal__dk p:last-of-type{
+    font-size: 1.3rem;
+}
+.modal__dk h1,
+.modal__dn h1{
+    font-size: 2.2rem;
+    color: green;
+}
+@media (max-width:1000px) {
+    .modal{
+        display: flex;
+    }
+    .modal{
+        padding-top: 20px;
+    }
+    .modal__content,.modal__bg{
+        height: 90vh;
+        width: 90%;
+        flex-wrap: wrap;
+        
+    }
+    .modal__dn,.modal__dk{
+        border: none;
+        width: 100% !important;
+        
+    }
+    .btn__eye{
+        top: 24%;
+        right: 0.2%;
+        width: 43px;
+        height: 44px;
+        border: solid 1px rgb(185, 185, 185) ;
+        
+    }
+    
+}
+.close{
+    position: absolute;
+    right: 1%;
+    top: 2%;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: green;
+  cursor: pointer;
+}
