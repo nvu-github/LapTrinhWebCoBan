@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí tài khoản</title>
+
+    <!-- file css dùng chung -->
+    <link rel="stylesheet" href="../public/css/style.css">
+    <!-- ------------------- -->
+
+    <!-- file css dùng riêng -->
+    <link rel="stylesheet" href="../public/css/dn.css">
+    <link rel="stylesheet" href="../public/css/dk.css">
+    <!-- ------------------- -->
+    <script src="../public/js/style.js">
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="contact">
+                <span>Liên hệ đặt hàng: <a href="tel:0123456789">0123456789 </a> 
+                    -<a href="tel:0987654321"> 0987654321</a> </span>
+                    <marquee id="animation">Nội thất TUNH - Uy tín chất lượng đến từng sản phẩm</marquee>
+                
+            </div>
+            <div class="banner size-w">
+                <div class="logo-img">
+                    <a href="../../index.html"><img src="../images/LOGO2.png" alt="logo website"></a>
+                </div>
+                <div class="banner-header">
+                    <a href="#" class="btn-giohang"> <img src="../images/icongiohang.png" alt=""> <span>Giỏ hàng</span></a>
+                    <a href="#" class="btn-giohang iclogin" id="btnloggin" onclick="openbtn()"><img src="../images/iconlogin.png" alt=""> <span>Đăng nhập</span></a>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="menu-list size-w">
+                <ul class="menu1">
+                    <li class="item1"> <a href="#">Sản phẩm</a>
+                        <ul class="menu2">
+                            <li class="item2"> <a href="#"> Sản phẩm 1</a> </li>
+                            <li class="item2"> <a href="#"> Sản phẩm 2</a>  </li>
+                            <li class="item2"> <a href="#"> Sản phẩm 3</a>  </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="item1"> <a href="#">Nội thất gia đình</a>
+                        <ul class="menu2">
+                            <li class="item2"> <a href="#"> Bàn</a> </li>
+                            <li class="item2"> <a href="#"> Ghế</a> </li>
+                            <li class="item2"> <a href="#"> Tủ</a> </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="item1"> <a href="#">Nội thất văn phòng</a> 
+                        <ul class="menu2">
+                            <li class="item2"> <a href="#"> Bàn</a> </li>
+                            <li class="item2"> <a href="#"> Ghế</a> </li>
+                            <li class="item2"> <a href="#"> Tủ</a> </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="item1"> <a href="#">Nội thất trường học</a> 
+                        <ul class="menu2">
+                            <li class="item2"> <a href="#"> Bàn</a> </li>
+                            <li class="item2"> <a href="#"> Ghế</a> </li>
+                            <li class="item2"> <a href="#"> Tủ</a> </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="item1"> <a href="#">Nội thất ống nước</a> 
+                        <ul class="menu2">
+                            <li class="item2"> <a href="#"> Bàn</a> </li>
+                            <li class="item2"> <a href="#"> Ghế</a> </li>
+                            <li class="item2"> <a href="#"> Tủ</a> </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div id="content" class="size-w">
+            <div class="content__header">
+                <a href="./index.html">Trang chủ</a>
+                <span>/ Đăng ký tài khoản</span>
+            </div>
+            <div class="content__main">
+                <form class="main__formdk">
+                    <h1 class="form__header">ĐĂNG KÝ NGAY</h1>
+                    <div class="tendk">
+                        <label for="tendk" class="lb">Tên đăng nhập hoặc địa chỉ email*</label>
+                        <input type="text" name="tdk" id="tendk">
+                    </div>
+                    <div class="ht">
+                        <label for="tendk" class="lb">Họ tên*</label>
+                        <input type="text" name="tdk" id="tendk">
+                    </div>
+                    <div class="mkdk">
+                        <label for="mkdk" class="lb">Mật khẩu*</label>
+                        <input type="password" name="mkhaudk" id="mkdk">
+                    </div>
+                    <div class="remkdk">
+                        <label for="remkdk" class="lb">Nhập lại mật khẩu*</label>
+                        <input type="password" name="remkhaudk" id="remkdk">
+                    </div>
+                    <div class="hienmk" onclick="hienmk()">
+                        <input type="checkbox" name="openmk" class="hienmk" id="hienmk"><label for="hienmk">Hiện mật khẩu</label>
+                    </div>
+                    <div class="gt">
+                        <span>Giới tính:</span><br>
+                        <input type="radio" name="gt" id="nam" value="nam"><label for="nam">Nam</label>
+                        <input type="radio" name="gt" id="nu" value="nu"><label for="nu">Nữ</label>
+                    </div>
+                    <div class="namsinh">
+                       <span>Ngày sinh: </span><br> <input type="date" name="ns" id="nsinh" value="ns">
+                    </div>
+                    <div class="form__footer">
+                        <button type="submit" value="signup" class="btnsignup" name="dk">ĐĂNG KÝ</button>
+                    </div>
+                </form>
+                <div class="main__in4">
+                    <h3>Đăng ký thành viên để nhận thật nhiều tiện ích</h3>
+                    <ul>
+                        <li>Dễ dàng thuận tiện trong việc mua hàng</li>
+                        <li>Nhiều khuyến mãi hơn</li>
+                        <li>Ngoài ra còn rất nhiều lợi ích khác...</li>
+                    </ul>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="size-w">
+                <div class="content-footer-left">
+                    <p>HỖ TRỢ KHÁC HÀNG</p>
+                </div>
+                <div class="content-footer-right">
+                    <p>MẠNG XÃ HỘI</p>
+                    <a href="#"><img src="../images/iconfb.png" alt=""></a>
+                    <a href="#"><img src="../images/iconig.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- modal đăng nhập -->
+        <div class="modal" id="modal1">
+            <div class="modal__bg animate">
+                <form action="" class="modal__content">
+                <span class="close" id="btnclose" onclick="closebtn()">X</span>
+                <div class="modal__dn">
+                    <h1>ĐĂNG NHẬP</h1>
+                    <div class="tdn">
+                        <label for="tdn">Tên đăng nhập hoặc địa chỉ email*</label>
+                        
+                        <input type="text" name="tendn" id="tdn">
+                    </div>
+                    
+                    <div class="mkdn">
+                        <label for="mkdn">Mật khẩu*</label>
+                        <input type="password" name="mkhaudn" id="mkdn">
+                        <button class="btn__eye" type="button" id="btnPassword" onclick="eyepass()">
+                            <img src="./src/images/eye.png" alt="eye" id="imgeye">
+                            <img src="./src/images/eyeslash.png" alt="eye" id="imgeyeslash">
+                          </button>
+                    </div>
+                    <div class="fogotmk">
+                        <a href="#" id="quenmk">Quên mật khẩu?</a>
+                    </div>
+                    <div class="remember">
+                        <input type="checkbox" name="rm" id="rmb"><label for="rmb">Lưu thông tin đăng nhập</label>
+                    </div>
+                    <div class="logginfooter">
+                        <button type="submit" value="dki" class="btnsignup" name="signup">ĐĂNG KÍ </button>
+                        <button type="submit" value="loggin" class="btnloggin" name="lg">ĐĂNG NHẬP</button>
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+                </form>
+            </div>
+                
+            </div>
+    </div>
+    <!-- js chung -->
+    <script src="../public/js/style.js"></script>
+    <!-- js rieng -->
+    <script src="../public/js/home.js"></script>
+
+</body>
+</html>

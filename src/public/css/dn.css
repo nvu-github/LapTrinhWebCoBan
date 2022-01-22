@@ -8,6 +8,7 @@
     right: 0;
     background-color: rgba(0,0,0,0.4);
     
+    
 }
 .modal{
     display: none;
@@ -19,9 +20,11 @@
     background-color: #fff;
     margin: auto;
     border: 1px solid #888;
-    width: 900px;
+    width:400px;
     height: 400px;
     overflow: hidden;
+    border-radius: 10px;
+    border: 1px green solid;
 }
 .modal__content{    
     position: absolute;
@@ -30,25 +33,22 @@
     
 }
 .modal__dn {
-    width: 50%;
-    padding: 10px 50px;
-    border-right:1px solid rgb(212, 212, 212);
+    padding: 10px 40px;
     margin: 20px 0px;
 }
 .modal__dn label{
-    font-size: 1.5rem;
+    font-size: 14px;
     font-weight: bold;
 
 }
 .mkdn{
     margin-top: 20px;
-
 }
-#tdn,#mkdn,#tdk{
+#tdn,#mkdn{
     width: 100%;
-    height: 40px;
+    height: 30px;
     border:1px solid rgb(185, 185, 185);
-    font-size: 1.5rem;
+    font-size: 14px;
     box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
     appearance: none;
     outline: 0;
@@ -57,13 +57,13 @@
 #mkdn{
     position: relative;
 }
-.btn__eye{display: flex;
-    width: 42px;
-    height: 42px;
+.btn__eye{
+    width: 32px;
+    height: 32px;
     background-color: #fff;
     position: absolute;
-    top: 48.7%;
-    right: 55.1%;
+    top: 58%;
+    right: 8.7%;
     border: none;
     border-left: 1px solid rgb(185, 185, 185);
     box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
@@ -76,22 +76,40 @@
 }
 
 .remember{
-    margin-top: 20px;
-    font-size: 1.5rem;
+    margin-top: 10px;
+    font-size: 14px;
 }
 .remember label{
     margin-left: 20px;
 }
 .btnloggin,.btnsignup{
-    background-color: var(--back-color);
+    background-color: green;
     color: #fff;
-    padding: 10px 20px;
-    font-size: 1.5rem;
-    border-radius: 2px;
+    margin-top: 25px;
+    padding: 10px 0px;
+    width: 140px;
+    font-size: 14px;
+    border-radius: 5px;
     border:gray 1px solid;
-    margin-top: 20px;
     cursor: pointer;
+    position: relative;
     font-weight: bold;
+    text-align: center;
+}
+.btnloggin:hover,
+.btnsignup:hover{
+    background-color:rgb(2, 92, 2) ;
+}
+.logginfooter{
+    display: flex;
+    justify-content: space-around;
+    width: 100% !important;
+    padding-bottom: 9%;
+    margin-left: 0;
+    position: relative;
+    border-top: 1px solid #888;
+    background-color: rgb(223, 223, 223);
+
 }
 .fogotmk{
     margin-top: 10px;
@@ -101,52 +119,14 @@
     text-decoration: none;
     color: black;
 }
-.modal__dk{
-    padding: 10px 50px;
-    margin: 20px 0px;
-    width: 50%;
-    font-size: 1.5rem;
-    line-height: 20px;
-}
-.modal__dk p:last-of-type{
-    font-size: 1.3rem;
-}
-.modal__dk h1,
 .modal__dn h1{
     font-size: 2.2rem;
     color: green;
-}
-@media (max-width:1000px) {
-    .modal{
-        display: flex;
-    }
-    .modal{
-        padding-top: 20px;
-    }
-    .modal__content,.modal__bg{
-        height: 90vh;
-        width: 90%;
-        flex-wrap: wrap;
-        
-    }
-    .modal__dn,.modal__dk{
-        border: none;
-        width: 100% !important;
-        
-    }
-    .btn__eye{
-        top: 24%;
-        right: 0.2%;
-        width: 43px;
-        height: 44px;
-        border: solid 1px rgb(185, 185, 185) ;
-        
-    }
-    
+    text-align: center;
 }
 .close{
     position: absolute;
-    right: 1%;
+    right: 2%;
     top: 2%;
     color: #000;
     font-size: 25px;
@@ -156,4 +136,7 @@
 .close:focus {
   color: green;
   cursor: pointer;
+}
+#imgeye{
+    display: none;
 }
