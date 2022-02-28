@@ -1,0 +1,56 @@
+.tieude-gioithieu {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    text-shadow: 3px 3px 5px #198e1e;
+}
+
+.row-gioithieu-left {
+    margin: 50px 0;
+    display: flex;
+}
+
+.row-gioithieu-left .img-gioithieu {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.row-gioithieu-left .img-gioithieu img {
+    width: 100%;
+}
+
+.row-gioithieu-left .content-gioithieu {
+    width: 70%;
+}
+
+.title-row {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.content-row {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.row-gioithieu-right {
+    margin: 20px 0;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.row-gioithieu-right .img-gioithieu {
+    width: 40%;
+    margin-left: 20px;
+}
+
+.row-gioithieu-right .img-gioithieu img {
+    width: 100%;
+}
+
+.row-gioithieu-right .content-gioithieu {
+    width: 70%;
+}

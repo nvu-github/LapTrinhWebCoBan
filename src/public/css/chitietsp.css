@@ -1,0 +1,565 @@
+
+.content__header{
+    font-size: 15px;
+}
+.content__header a,.content__header span{
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+}
+.content__header span:last-child{
+    color: rgb(119, 117, 117);
+}
+.content__header a:hover{
+    color: gray;
+}
+.content__main{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#anhgoc{
+    width: 100%;
+    height: 60%;
+    background-size: 100%;
+    background-image: url("https://images.pexels.com/photos/2582546/pexels-photo-2582546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+/* -------------------------------- */
+/* Form mua hàng */
+.main__nd{
+    margin: 0 0 0 50px;
+    width: 100%;
+}
+.main__nd>h1{
+    margin-top: 0;
+    color: green;
+}
+.line{
+    width: 1px;
+    height: 20px;
+    background-color: #bbb7b7;
+    margin: auto 20px;
+}
+.main__contact{
+    display: flex;
+    margin:0 0 10px 5px
+}
+.danhgia span:last-child,.slgban span:last-child{
+    color: rgb(138, 135, 135);
+    margin-left: 10px;
+    font-size: 13px;
+}
+#sodg, #slban{
+    color: green;
+    text-decoration: underline;
+    
+}
+.main__in4_sp{
+    border: 1px solid #eaeaea;
+    width: 100%;
+}
+.in4_sp__header{
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+.old{
+    text-decoration: line-through;
+    font-size: 14px;
+    margin: auto 0;
+    color:gray;
+}
+.new{
+    margin: auto 0;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: red;
+}
+.deal{
+    margin: auto 10px;
+    background-color: #ee4d2d;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    padding:3px 5px;
+}
+.in4_sp__content{
+    margin-top: 20px;
+    line-height: 40px;
+}
+.in4_sp__content span{
+    margin-left: 20px;
+}
+#tinhtrang{
+    margin-left: 20px;
+    color: green;
+    font-weight: 700;
+}
+#sl{
+    margin-left: 56px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(226, 226, 226);
+    border: none;
+    outline: none;
+    float:left;
+    margin-right: 5px;
+    
+}
+.in4_sp__content__soluong>span{
+    float: left;
+}
+#tang,#giam{
+    
+    margin-left: 5px;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    color: green;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    display: block;
+    
+}
+#tang{
+    margin-bottom: 2px;
+    
+}
+#giam{
+    margin-bottom: 10px;
+}
+#tang:hover,#giam:hover{
+    background-color: rgb(117, 117, 252);
+}
+#dambao{
+    background-color: #ffff59;
+    width:60%;
+    padding: 2px;
+    border-radius: 5px;
+}
+.in4_sp__footer{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(240, 250, 229);
+}
+#themgiohang{
+    padding: 15px;
+    width: 150px;
+    background-color: #48a51f;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#muangay{
+    margin-left: 20px;
+    padding: 15px;
+    width: 150px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background: orange;
+    cursor: pointer;
+}
+.main__dkiengiaohang{
+    background-color: #eaeaea;
+    font-size: 14px;
+    line-height: 30px;
+}
+/* -------------------------------- */
+/* đổi ảnh các góc của sp */
+.doianh{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    height: 20%;
+}
+.doianh img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.doianh img:hover{
+    border: 1px solid green;
+}
+/* -------------------------------- */
+/* chi tiết sản phẩm */
+.chitiet__sptt{
+    display: grid;
+    grid-template-columns: 70% auto;
+    width: 100%;
+    
+}
+.content__chitiet{
+    border: #eaeaea 1px solid;
+    height: auto;
+}
+.chitiet__header>h2{
+    background: #f2f2f2;
+    margin-top: 0;
+    padding:10px;
+    box-shadow: 0 0 4px 0 #ccc;
+}
+.chitiet__content{
+    margin-left: 20px;
+    line-height: 30px;
+    font-size: 15px;
+}
+.chitiet__img{
+    margin-left: 40px;
+}
+.chitiet__img img{
+    width: 90%;
+}
+/* -------------------------------- */
+/* sản phẩm tương tự */
+.sptt>h2{
+    text-align: center;
+}
+.content__sptt{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    width: 100%;
+    margin-left: 20px;
+}
+.card-product{
+    width: 100%;
+}
+.content-card span{
+    font-size: 18px;
+}
+/* -------------------------------- */
+/* Nhận xét */
+.content__nhanxet{
+    border: #eaeaea 1px solid;
+    margin-top: 20px;
+    width: 100%;
+}
+.content__nhanxet>h3
+{
+    margin-top: 0;
+    background-color: #eaeaea;
+    padding: 10px;
+}
+.nhanxet__nd{
+    border: #eaeaea 1px solid;
+    padding: 20px;
+    margin-left: 20px;
+    width: 90%;
+}
+.ngdgia{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+.ten{
+    font-weight: bold;
+}
+.time{
+    color: gray;
+}
+.nhanxet__footer{
+    display: flex;
+    background-color: #e4e9f5;
+    padding: 20px 0;
+}
+#btnnhanxet{
+    margin:0 20px;
+    background-color: #12d300;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Modal Mua ngay */
+.modal_muangay{
+    display: flex;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    
+}
+.modal_muangay{
+    display: none;
+    padding-top: 20vh;
+}
+.muangay__bg
+{
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    border: 1px solid #888;
+    width:500px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px green solid;
+    animation:hienmuangay linear 0.2s 1;
+    
+}
+@keyframes hienmuangay{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+.muangay__content{
+    line-height: 20px;
+}
+.muangay__nd {
+    margin: 30px;
+}
+.header__mua{
+    text-align: center;
+    color: green;
+    height: 20px;
+}
+.muangay__spham{
+    display: grid;
+    grid-template-columns: auto 60%;
+    margin-bottom: 20px;
+}
+.img__sp{
+    width: 100%;
+    background-size: 100%;
+    height: 110px ;
+}
+.chitietmua{
+    margin-left: 20px;
+    color: red;
+    margin-top: -10px;
+}
+.muangay__nd label{
+    font-size: 14px;
+
+}
+.sdt{
+    margin-top: 20px;
+}
+.muangay__nd >p{
+    text-align: center;
+}
+#hvt,#sdt,#email,#diachi{
+    width: 100%;
+    height: 30px;
+    border:1px solid rgb(185, 185, 185);
+    font-size: 14px;
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+    appearance: none;
+    outline: 0;
+    
+}
+#sdt{
+    position: relative;
+}
+.muangay__footer{
+    display: flex;
+    width: 100%;
+    padding-bottom: 9%;
+    padding:20px 30px;
+    margin:35px -30px;
+    border-top: 1px solid rgb(180, 243, 183);
+    background-color: rgb(228, 255, 199);
+}
+.btnbuy{
+    background-color: orange;
+    color: #fff;
+    padding: 10px 0px;
+    width: 140px;
+    font-size: 14px;
+    border-radius: 5px;
+    border:gray 1px solid;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    margin: auto;
+}
+.btnbuy:hover{
+    background-color:rgb(2, 92, 2) ;
+}
+
+.fogotmk{
+    margin: 10px 5px;
+    font-size: 14px;
+}
+.fogotmk a{
+    text-decoration: none;
+    color: black;
+}
+.modal__dn h1{
+    font-size: 22px;
+    color: green;
+    text-align: center;
+}
+.close{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: green;
+  cursor: pointer;
+}
+/* -------------------- */
+/* modal nhận xét */
+.modal_danhgia{
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    
+}
+.modal_danhgia{
+    display: none;
+    padding-top: 20vh;
+}
+.danhgia__bg
+{
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    border: 1px solid #888;
+    width:600px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px green solid;
+    animation:hiendgia linear 0.2s 1;
+    
+}
+@keyframes hiendgia{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+.danhgia__content{
+    line-height: 20px;
+}
+.danhgia__nd {
+    margin: 20px;
+}
+.header__dgia{
+    margin:0 30px 30px 20px;
+    color: rgb(0, 0, 0);
+    height: 20px;
+}
+.danhgia__nd label{
+    font-size: 14px;
+
+}
+.danhgia__nd >p{
+    text-align: center;
+}
+#tenb{
+    height: 30px;
+    margin-bottom: 20px;
+}
+#tenb,#nhapdgia{
+    width: 100%;
+    background-color: #eeeeee;
+    font-size: 14px;
+    border: none;
+    appearance: none;
+    outline: 0;
+    border: 1px solid #eaeaea;
+    
+}
+#tenb:focus,
+#nhapdgia:focus{
+    background-color: #fff;
+}
+#tenb:hover,
+#nhapdgia:hover{
+    border: 1px solid #c5c5c5;
+}
+#sao{
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 5% 5% 5% 5% 5%;
+}
+#sao>div{
+    margin-left: 5px;
+    
+}
+#rate{
+margin-left: 50px;
+color: #ee4d2d;
+margin-top: 10px;
+width: 100px;
+}
+.star{
+    width:20px;
+    height: 20px;
+    background-image: url(/src/images/starden.png);
+    background-size: 20px;
+}
+.over{
+    width:20px;
+    height: 20px;
+    background-image: url(/src/images/stardenxi.png);
+    background-size: 20px;
+}
+.fix{
+    width:20px;
+    height: 20px;
+    background-image: url(/src/images/stardenhon.png);
+    background-size: 20px;
+}
+.danhgia__footer{
+    position: absolute;
+    margin: 0 !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding:30px;
+    border-top: 1px solid rgb(180, 243, 183);
+    background-color: rgb(226, 226, 226);
+}
+.btnsend{
+    background-color: green;
+    color: #fff;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    border:gray 1px solid;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btnsend:hover{
+    background-color:rgb(2, 92, 2);
+}
+
+
+.close{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: green;
+  cursor: pointer;
+}

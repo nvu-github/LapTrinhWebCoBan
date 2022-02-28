@@ -15,3 +15,7 @@ window.onscroll = function() {
         menu.classList.remove("menuTop");
     }
 }
+
+if (document.getElementById('content') && document.getElementById('content').clientHeight < 500) {
+    document.getElementById('footer').style.position = "fixed";
+}

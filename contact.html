@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ nội thất</title>
+    <link rel = "icon" href ="./src/images/LOGO2.png" type = "image/x-icon">
+
+    <!-- file css dùng chung -->
+    <link rel="stylesheet" href="./src/public/css/style.css">
+    <!-- ------------------- -->
+
+    <!-- file css dùng riêng -->
+    <link rel="stylesheet" href="./src/public/css/home.css">
+    <link rel="stylesheet" href="./src/public/css/dn.css">
+    <link rel="stylesheet" href="./src/public/css/contact.css">
+    <!-- ------------------- -->
+</head>
+<body>
+    <div id="container">
+
+        <!-- header -->
+
+        <div id="header">
+            <div class="contact">
+                <span>Liên hệ đặt hàng: 0123456789 - 0987654321</span>
+                <span id="nowday">time</span>
+            </div>
+            <div class="banner size-w">
+                <div class="logo-img">
+                   <a href="./index.html"><img src="./src/images/LOGO2.png" alt="logo website" /></a> 
+                </div>
+                <div class="banner-header">
+                    <a href="#" class="btn-giohang"> <img src="./src/images/icongiohang.png" alt=""> <span>Giỏ hàng</span></a>
+                    <a href="#" class="btn-giohang iclogin" id="btnloggin" onclick="openbtn()"> <img src="./src/images/iconlogin.png" alt=""> <span>Đăng nhập</span></a>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="menu-list size-w">
+                <ul class="menu1">
+                    <li class="item1"> <a>Sản phẩm</a>
+                        <ul class="menu2">
+                            <li class="item2"> <a href="#"> Sản phẩm 1</a> </li>
+                            <li class="item2"> <a href="#"> Sản phẩm 2</a>  </li>
+                            <li class="item2"> <a href="#"> Sản phẩm 3</a>  </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="item1"> <a>Nội thất gia đình</a>
+                        <ul class="menu2">
+                            <li class="item2"> <a href="#"> Bàn</a> </li>
+                            <li class="item2"> <a href="#"> Ghế</a> </li>
+                            <li class="item2"> <a href="#"> Tủ</a> </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="item1"> <a>Nội thất văn phòng</a> 
+                        <ul class="menu2">
+                            <li class="item2"> <a href="#"> Bàn</a> </li>
+                            <li class="item2"> <a href="#"> Ghế</a> </li>
+                            <li class="item2"> <a href="#"> Tủ</a> </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="item1"> <a>Nội thất trường học</a> 
+                        <ul class="menu2">
+                            <li class="item2"> <a href="#"> Bàn</a> </li>
+                            <li class="item2"> <a href="#"> Ghế</a> </li>
+                            <li class="item2"> <a href="#"> Tủ</a> </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="item1"> <a href="./gioithieu.html">Giới thiệu</a> 
+                    </li>
+
+                    <li class="item1"> <a href="#">Liên hệ</a> 
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <!-- content -->
+
+        <div id="content" class="size-w">
+            <form id="form-lienhe" action="" method="">
+                <h2>Gửi ý thông tin của bạn cho chúng tôi</h2>
+                <div class="form-group">
+                    
+                    <div class="input">
+                        <input name="hoten" type="text" class="input-text inp-name" autocomplete="off" placeholder="Họ tên"/>
+                    </div>
+                    
+                    <div class="input">
+                        <input name="hoten" type="text" class="input-text inp-name" autocomplete="off" placeholder="Số điện thoại"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input">
+                        <input name="hoten" type="text" class="input-text" autocomplete="off" placeholder="Email" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input">
+                        <textarea name="" class="input-text" id="" rows="4" placeholder="Nội dung" ></textarea>
+                    </div>
+                </div>
+
+                <div class="btn-right-form">
+                    <button name="btn-send-contact" value="btn-send-contact" type="submit">Gửi</button>
+                </div>
+                
+            </form>
+        </div>
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="size-w">
+                <div class="footer-content">
+                    <div class="content-footer-left">
+                        <div class="img-logo-footer">
+                            <img src="./src/images/LOGO2.png" alt="logo footer" width="100%">
+                        </div>
+                        <div style="margin-top:10px">
+                            <p>ĐỒ NỘI THẤT TUNH</p>
+                            <i>Mang lại trải nghiệm tốt nhất cho khách hàng</i>
+                        </div>
+                        <div class="lienhe">
+                            <p>Địa chỉ: 197 Hoàng Liệt, Hoàng Mai, Hà Nội</p>
+                            <p style="margin-top:10px;">Email: tunh@gmail.com</p> 
+                        </div>
+                    </div>
+                    <div class="content-footer-right">
+                        <p>MẠNG XÃ HỘI</p> <br>
+                        <a href="#"><img src="./src/images/iconfb.png" alt=""></a>&nbsp;&nbsp;
+                        <a href="#"><img src="./src/images/iconyoutube.png" class="imgyoutube" alt=""></a>&nbsp;&nbsp;
+                        <a href="#"><img src="./src/images/iconig.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal1">
+        <div class="modal__bg animate">
+            <form action="" class="modal__content">
+            <span class="close" id="btnclose" onclick="closebtn()">X</span>
+            <div class="modal__dn">
+                <h2>ĐĂNG NHẬP</h1>
+                <div class="tdn">
+                    <label for="tdn">Tên đăng nhập hoặc địa chỉ email*</label>
+                    
+                    <input type="text" name="tendn" id="tdn">
+                </div>
+                
+                <div class="mkdn">
+                    <label for="mkdn">Mật khẩu*</label>
+                    <input type="password" name="mkhaudn" id="mkdn">
+                    <button class="btn__eye" type="button" id="btnPassword" onclick="eyepass()">
+                        <img src="./src/images/eye.png" alt="eye" id="imgeye">
+                        <img src="./src/images/eyeslash.png" alt="eye" id="imgeyeslash">
+                      </button>
+                </div>
+                <div class="fogotmk">
+                    <a href="#" id="quenmk">Quên mật khẩu?</a>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" name="rm" id="rmb"><label for="rmb">Lưu thông tin đăng nhập</label>
+                </div>
+                <div class="logginfooter">
+                    <a href="./src/resource/dki.html" value="dki" name="signup"class="btnsignup" style="text-decoration: none;">ĐĂNG KÍ</a>
+                    <button type="submit" value="loggin" class="btnloggin" name="lg">ĐĂNG NHẬP</button>
+                    
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- js chung -->
+    <script src="./src/public/js/style.js"></script>
+    <!-- js rieng -->
+
+</body>
+</html>

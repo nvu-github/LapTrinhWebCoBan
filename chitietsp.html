@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel = "icon" href ="./src/images/LOGO2.png" type = "image/x-icon">
+    <!-- file css dùng chung -->
+    <link rel="stylesheet" href="./src/public/css/style.css">
+    <!-- ------------------- -->
+
+    <!-- file css dùng riêng -->
+    <link rel="stylesheet" href="./src/public/css/dn.css">
+    <link rel="stylesheet" href="./src/public/css/chitietsp.css">
+    <!-- ------------------- -->
+    
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="contact">
+                <span>Liên hệ đặt hàng: <a href="tel:0123456789">0123456789 </a> 
+                    -<a href="tel:0987654321"> 0987654321</a> </span>
+                    <span id="nowday">time</span>
+                
+            </div>
+            <div class="banner size-w">
+                <div class="logo-img">
+                    <a href="./src/./src/index.html"><img src="./src/images/LOGO2.png" alt="logo website"></a>
+                </div>
+                <div class="banner-header">
+                    <a href="#" class="btn-giohang"> <img src="./src/images/icongiohang.png" alt=""> <span>Giỏ hàng</span></a>
+                    <a href="#" class="btn-giohang iclogin" id="btnloggin" onclick="openbtn()"><img src="./src/images/iconlogin.png" alt=""> <span>Đăng nhập</span></a>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="menu-list size-w">
+                <ul class="menu1">
+                    <li class="item1"> <a href="#">Sản phẩm</a>
+                        <ul class="menu2">
+                            <li class="item2"> <a href="#"> Sản phẩm 1</a> </li>
+                            <li class="item2"> <a href="#"> Sản phẩm 2</a>  </li>
+                            <li class="item2"> <a href="#"> Sản phẩm 3</a>  </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="item1"> <a href="#">Nội thất gia đình</a>
+                        <ul class="menu2">
+                            <li class="item2"> <a href="#"> Bàn</a> </li>
+                            <li class="item2"> <a href="#"> Ghế</a> </li>
+                            <li class="item2"> <a href="#"> Tủ</a> </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="item1"> <a href="#">Nội thất văn phòng</a> 
+                        <ul class="menu2">
+                            <li class="item2"> <a href="#"> Bàn</a> </li>
+                            <li class="item2"> <a href="#"> Ghế</a> </li>
+                            <li class="item2"> <a href="#"> Tủ</a> </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="item1"> <a href="#">Nội thất trường học</a> 
+                        <ul class="menu2">
+                            <li class="item2"> <a href="#"> Bàn</a> </li>
+                            <li class="item2"> <a href="#"> Ghế</a> </li>
+                            <li class="item2"> <a href="#"> Tủ</a> </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="item1"> <a href="#">Nội thất ống nước</a> 
+                        <ul class="menu2">
+                            <li class="item2"> <a href="#"> Bàn</a> </li>
+                            <li class="item2"> <a href="#"> Ghế</a> </li>
+                            <li class="item2"> <a href="#"> Tủ</a> </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div id="content" class="size-w">
+            <div class="content__header">
+                <a href="/index.html">Trang chủ</a>
+                <span>>></span>
+                <a href="#">Sản Phẩm</a>
+                <span>>></span>
+                <a href="#">Bàn</a>
+                <span>>></span>
+                <span id="tenspnhanh"></span>
+            </div>
+            <div class="content__main">
+                <div class="main_anhsp">
+                    <div id="anhgoc" ></div>
+                    <section class="doianh">
+                        <img id="anh1" src="https://images.pexels.com/photos/2582546/pexels-photo-2582546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"  onmousemove="zoomout(this)" alt="">
+                        <img id="anh2" src='https://hoanghapc.vn/media/news/2010_goc-gaming-dep79.jpg' onmousemove="zoomout(this)" alt="">
+                        <img id="anh3" src="https://game8.vn/media/files/vinh/goc-may-tinh-thang-7-vgs-02.jpg" onmousemove="zoomout(this)" alt="">
+                        <img id="anh4" src="https://hocspringmvc.net/wp-content/uploads/2020/12/pc.jpg" onmousemove="zoomout(this)" alt="">
+                    </section>
+                    
+                </div>
+                
+                <div class="main__nd">
+                    <h1 id="tensp">Bàn làm việc SP123</h1>
+                    <div class="main__contact">
+                        <div class="danhgia">
+                            <a href="#btnnhanxet" id="sodg">200</a>
+                            <span>Đánh Giá</span>
+                        </div>
+                        <div class="line"></div>
+                        <div class="slgban">
+                            
+                            <a href="#" id="slban">200</a>
+                            <span>Đã Bán</span>
+                        </div>
+                    </div>
+                    <form action="" class="main__in4_sp" id="in4">
+                        <div class="in4_sp__header">
+                            <span class="old">1400000 vnđ</span>
+                            <span class="new" id="gianew">1200000</span><span>vnđ</span>
+                            <span class="deal">14% GIẢM</span>
+                        </div>
+                        <div class="in4_sp__content">
+                            <div class="in4_sp__content__ma">
+                                <span>Mã Sản Phẩm: </span>
+                                <span id="masp">SP123</span>
+                            </div>
+                            <div class="in4_sp__content__tt">
+                                <span>Tình Trạng: </span>
+                                <span id="tinhtrang">Còn hàng</span>
+                            </div>
+                            <div class="in4_sp__content__soluong">
+                                <span>Số Lượng: </span>
+                                <input type="text" value="1" name="sl" id="sl">
+                                <!-- onclick tăng giảm số lượng sp -->
+                                <input type="button" value="+" name="up" id="tang">
+                                <input type="button" value="-" name="down" id="giam">
+                            </div>
+                            <span id="dambao">Đảm bảo: 3 Ngày trả hàng / Hoàn tiền</span>
+                        </div>
+                        <div class="in4_sp__footer">
+                                <button type="submit" value="gio" name="tvgio" id="themgiohang">THÊM VÀO GIỎ</button>
+                                <button type="button" value="mua" name="muangay" id="muangay" onclick="openmua()">MUA NGAY</button>
+                        </div>
+                    </form>
+                    <div class="main__dkiengiaohang">
+                        <ul>
+                            <li>Giao hàng MIỄN PHÍ các quận HN với đơn hàng > 1 triệu, gồm: <br>
+                               <i>Hai Bà Trưng, Hoàng Mai, Hoàn Kiếm, Long Biên.</i>
+                                (<a href="#" target="_blank">xem chi tiết</a>)
+                            </li>
+                            <li>Giao hàng tiêu chuẩn dự kiến 1-7 ngày</li>
+                            <li>Các quận ngoại thành và tỉnh khác sẽ có phí thỏa thuận từ 50-200k</li>
+                            <li>Giá chưa bao gồm 10% VAT(TUNH xuất hóa đơn điện tử)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="chitiet__sptt">
+                <div class="content__chitiet">
+                    <div class="chitiet__header">
+                        <h2>Mô tả sản phẩm</h2>
+                    </div>
+                    <div class="chitiet__content">
+                        <p><b>Sản Phẩm SP123</b> có mặt bàn sử dụng 
+                            loại gỗ chính là Gỗ Hornbeam với điểm nhấn 3 đường kẻ sọc được làm từ Gỗ purple heart 
+                            (Gỗ trái tim màu tím – Thuộc top 9 loại gỗ đắt nhất thế giới) đây là mặt bàn độc nhất 
+                            mà bạn khó có thể tìm được mặt bàn thứ 2 trên thị trường. Kết hợp với mặt bàn độc 
+                            đáo là hệ khung chân sắt vuốt côn đẹp mắt, bề mặt sắt phủ lớp sơn tĩnh điện chất 
+                            lượng cao bền bỉ theo thời gian. Bàn làm việc SPD680170 chắc chắn sẽ là sự lựa chọn 
+                            tuyệt vời tạo điểm nhấn cho không gian làm việc thêm ấn tượng.
+                        </p>
+                        <p>THÔNG TIN CHI TIẾT SẢN PHẨM : </p>
+                        <ul>
+                            <li>Hướng dẫn sử dụng : Bàn làm việc,bàn văn phòng,./src.</li>
+                            <li>Chất liệu :  Mặt gỗ kết hợp giữa Gỗ Song Mã và Purple Heart. Khung chân sắt côn cơ cấu lắp ráp ngàm chắc chắn.</li>
+                            <li>Màu sắc : Mặt bàn màu gỗ tự nhiên. Bề mặt phủ lớp sơn tĩnh điện chất lượng cao màu trắng.</li>
+                            <li>Kích thước (DxRxC): 120x60x75(cm)</li>
+                            <li>Bảo hành : 12 Tháng</li>
+                        </ul>
+                    </div>
+                    <div class="chitiet__img">
+                        <img src="https://hocspringmvc.net/wp-content/uploads/2020/12/pc.jpg" alt="">
+                        <p>Bàn làm việc 120x60cm gỗ Gỗ Song Mã và Purple Heart cực độc đáo.</p>
+                        <img src='https://hoanghapc.vn/media/news/2010_goc-gaming-dep79.jpg' alt="">
+                        <p>Kết hợp với mặt bàn là hệ khung chân sắt vuốt côn cơ cấu lắp ráp ngàm chắc chắn và tiện lợi</p>
+                        <img src="https://game8.vn/media/files/vinh/goc-may-tinh-thang-7-vgs-02.jpg" alt="">
+                        <p>Điểm nhấn 3 đường kẻ sọc được làm từ Gỗ purple heart ( Thuộc top 9 loại gỗ đắt nhất thế giới)</p> 
+                    </div>
+                </div>
+                <div class="sptt">
+                    <h2>Sản Phẩm Tương Tự </h2>
+                    <div class="content__sptt">
+                        <a href="#">
+                            <div class="card-product">
+                                 <img src="https://images.pexels.com/photos/2582546/pexels-photo-2582546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                 <div class="content-card">
+                                     <p>Bàn làm việc</p>
+                                     <span class="old">1.400.000 vnđ</span><br>
+                                     <span class="new">1.200.000 <b>vnđ</b> </span> 
+                                 </div>
+                             </div> 
+                         </a>
+                         <a href="#">
+                            <div class="card-product">
+                                 <img src="https://images.pexels.com/photos/2582546/pexels-photo-2582546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                 <div class="content-card">
+                                     <p>Bàn làm việc</p>
+                                     <span class="old">1.400.000 vnđ</span><br>
+                                     <span class="new">1.200.000 <b>vnđ</b> </span> 
+                                 </div>
+                             </div> 
+                         </a>
+                         <a href="#">
+                            <div class="card-product">
+                                 <img src="https://images.pexels.com/photos/2582546/pexels-photo-2582546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                 <div class="content-card">
+                                     <p>Bàn làm việc</p>
+                                     <span class="old">1.400.000 vnđ</span><br>
+                                     <span class="new">1.200.000 <b>vnđ</b> </span> 
+                                 </div>
+                             </div> 
+                         </a>
+                         <a href="#">
+                            <div class="card-product">
+                                 <img src="https://images.pexels.com/photos/2582546/pexels-photo-2582546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                 <div class="content-card">
+                                     <p>Bàn làm việc</p>
+                                     <span class="old">1.400.000 vnđ</span><br>
+                                     <span class="new">1.200.000 <b>vnđ</b> </span> 
+                                 </div>
+                             </div> 
+                         </a>
+                         <a href="#">
+                            <div class="card-product">
+                                 <img src="https://images.pexels.com/photos/2582546/pexels-photo-2582546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                 <div class="content-card">
+                                     <p>Bàn làm việc</p>
+                                     <span class="old">1.400.000 vnđ</span><br>
+                                     <span class="new">1.200.000 <b>vnđ</b> </span> 
+                                 </div>
+                             </div> 
+                         </a>
+                         <a href="#">
+                            <div class="card-product">
+                                 <img src="https://images.pexels.com/photos/2582546/pexels-photo-2582546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                 <div class="content-card">
+                                     <p>Bàn làm việc</p>
+                                     <span class="old">1.400.000 vnđ</span><br>
+                                     <span class="new">1.200.000 <b>vnđ</b> </span> 
+                                 </div>
+                             </div> 
+                         </a>
+                         <a href="#">
+                            <div class="card-product">
+                                 <img src="https://images.pexels.com/photos/2582546/pexels-photo-2582546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                 <div class="content-card">
+                                     <p>Bàn làm việc</p>
+                                     <span class="old">1.400.000 vnđ</span><br>
+                                     <span class="new">1.200.000 <b>vnđ</b> </span> 
+                                 </div>
+                             </div> 
+                         </a>
+                         <a href="#">
+                            <div class="card-product">
+                                 <img src="https://images.pexels.com/photos/2582546/pexels-photo-2582546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                 <div class="content-card">
+                                     <p>Bàn làm việc</p>
+                                     <span class="old">1.400.000 vnđ</span><br>
+                                     <span class="new">1.200.000 <b>vnđ</b> </span> 
+                                 </div>
+                             </div> 
+                         </a>
+                         <a href="#">
+                            <div class="card-product">
+                                 <img src="https://images.pexels.com/photos/2582546/pexels-photo-2582546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                 <div class="content-card">
+                                     <p>Bàn làm việc</p>
+                                     <span class="old">1.400.000 vnđ</span><br>
+                                     <span class="new">1.200.000 <b>vnđ</b> </span> 
+                                 </div>
+                             </div> 
+                         </a>
+                         <a href="#">
+                            <div class="card-product">
+                                 <img src="https://images.pexels.com/photos/2582546/pexels-photo-2582546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                 <div class="content-card">
+                                     <p>Bàn làm việc</p>
+                                     <span class="old">1.400.000 vnđ</span><br>
+                                     <span class="new">1.200.000 <b>vnđ</b> </span> 
+                                 </div>
+                             </div> 
+                         </a>
+                         
+                        </div>
+                    </div>
+                    <div class="content__nhanxet">
+                        <h3>Nhận xét sản phẩm</h3>
+                        <div class="nhanxet">
+                            <div class="nhanxet__nd">abc xyz</div>
+                            <div class="ngdgia">
+                                <div class="ten">a</div>
+                                <div class="time">1/1/2022</div>
+                            </div>
+                        </div>
+                        <div class="nhanxet__footer">
+                            <button type="button" id="btnnhanxet"> VIẾT ĐÁNH GIÁ</button>
+                        </div>
+                    </div>
+                </div>
+                
+            
+        </div>
+        <div id="footer">
+            <div class="size-w">
+                <div class="footer-content">
+                    <div class="content-footer-left">
+                        <div class="img-logo-footer">
+                            <img src="./src/images/LOGO2.png" alt="logo footer" width="100%">
+                        </div>
+                        <div style="margin-top:10px">
+                            <p>ĐỒ NỘI THẤT TUNH</p>
+                            <i>Mang lại trải nghiệm tốt nhất cho khách hàng</i>
+                        </div>
+                        <div class="lienhe">
+                            <p>Địa chỉ: 197 Hoàng Liệt, Hoàng Mai, Hà Nội</p>
+                            <p style="margin-top:10px;">Email: tunh@gmail.com</p> 
+                        </div>
+                    </div>
+                    <div class="content-footer-right">
+                        <p>MẠNG XÃ HỘI</p> <br>
+                        <a href="#"><img src="./src/images/iconfb.png" alt=""></a>&nbsp;&nbsp;
+                        <a href="#"><img src="./src/images/iconyoutube.png" class="imgyoutube" alt=""></a>&nbsp;&nbsp;
+                        <a href="#"><img src="./src/images/iconig.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- modal đăng nhập -->
+        <div class="modal" id="modal1">
+            <div class="modal__bg">
+                <form action="" class="modal__content">
+                <span class="close" id="btnclose" onclick="closebtn()">X</span>
+                <div class="modal__dn">
+                    <h1>ĐĂNG NHẬP</h1>
+                    <div class="tdn">
+                        <label for="tdn">Tên đăng nhập hoặc địa chỉ email*</label>
+                        
+                        <input type="text" name="tendn" id="tdn">
+                    </div>
+                    
+                    <div class="mkdn">
+                        <label for="mkdn">Mật khẩu*</label>
+                        <input type="password" name="mkhaudn" id="mkdn">
+                        <div class="hienmkdn" onclick="hienmkdn()">
+                            <input type="checkbox" name="openmk" class="hienmkdn" id="hienmkdn"><label for="hienmkdn">Hiện mật khẩu</label>
+                        </div>
+                    </div>
+                    <div class="fogotmk">
+                        <a href="#" id="quenmk">Quên mật khẩu?</a>
+                    </div>
+                    <div class="remember">
+                        <input type="checkbox" name="rm" id="rmb"><label for="rmb">Lưu thông tin đăng nhập</label>
+                    </div>
+                    <div class="logginfooter">
+                        <a href="./src/resource/dki.html" class="btnsignup" name="signup" style="text-decoration: none;">ĐĂNG KÍ </a>
+                        <button type="submit" value="loggin" class="btnloggin" name="lg">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <!-- Modal mua ngay -->
+        <div class="modal_muangay" id="modal__muangay">
+            <div class="muangay__bg">
+                <form action="" class="muangay__content">
+                    <div class="header__mua">
+                        <span class="close" id="btclosemua" onclick="closemua()">X</span>
+                        <h3>MUA NGAY</h3>
+                    </div>
+                    <div class="muangay__nd">
+                        <div class="muangay__spham">
+                            <div class="img__sp" id="img_spmua"></div>
+                            <div class="chitietmua">
+                                <p id="tenspmua"></p>
+                                <p id="slm"></p>
+                                <div id="tongtien"></div>
+                            </div>
+                            
+                        </div>
+                        <div class="ht">
+                            <label for="hvt">Họ & Tên</label>
+                            <input type="text" name="ht" id="hvt">
+                        </div>
+                        <div class="sdt">
+                            <label for="sdt">Số Điện Thoại</label>
+                            <input type="text" name="sdt" id="sdt">
+                        </div>
+                        <p>---HOẶC---</p>
+                        <div class="emai">
+                            <label for="email">Email</label>
+                            <input type="email" name="em" id="email">
+                        </div>
+                        <div class="dc">
+                            <label for="diachi">Địa chỉ</label>
+                            <input type="text" name="dc" id="diachi">
+                        </div>
+                        <div class="muangay__footer">
+                            <button type="submit" value="mua" class="btnbuy" name="buy">MUA</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- modal viet danh gia -->
+        <div class="modal_danhgia" id="modal__danhgia">
+            <div class="danhgia__bg">
+                <form action="" class="danhgia__content">
+                    <div class="header__dgia">
+                        <span class="close" id="btclosedgia">X</span>
+                        <p>VIẾT ĐÁNH GIÁ</p>
+                    </div>
+                    <div class="danhgia__nd">
+                        <div class="tenngdgia">
+                            <label for="hvt">Tên bạn *</label>
+                            <input type="text" name="tenngdgia" id="tenb">
+                        </div>
+                        <div class="sosao">
+                            <label for="sao">Xếp hạng *</label>
+                            <div id="sao">
+                                <div class="star" id="star1" title="Kém"></div>
+                                <div class="star" id="star2" title="Không tốt"></div>
+                                <div class="star" id="star3" title="Bình thường"></div>
+                                <div class="star" id="star4" title="Tốt"></div>
+                                <div class="star" id="star5" title="Rất tốt"></div>
+                                <div id="rate"></div>
+                            </div>
+                            
+                        </div>
+                        <div class="cmt">
+                            <label for="bl">Đánh giá của bạn *</label>
+                            <textarea name="cmtdgia" cols="100" rows="6" id="nhapdgia"></textarea>
+                        </div>
+                        <div class="danhgia__footer">
+                            <button type="submit" value="gui" class="btnsend" name="send">GỬI</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <!-- js chung -->
+    <script src="./src/public/js/style.js"></script>
+    <!-- js rieng -->
+    <script src="./src/public/js/dk.js"></script>
+    <script src="./src/public/js/home.js"></script>
+    <script src="./src/public/js/chitietsp.js"></script>
+    <script>
+     
+    </script>
+</body>
+</html>

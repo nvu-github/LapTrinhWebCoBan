@@ -36,6 +36,32 @@ body {
     background-color: #198e1e;
 }
 
+.form-group {
+    padding: 10px;
+    display: flex;
+}
+
+.form-group .input {
+    margin-left: 20px;
+}
+
+.form-group .input-text {
+    padding: 10px 10px;
+    width: 542px;
+    border: 1px solid grey;
+    font-size: 16px;
+}
+
+.form-group .input-text:focus {
+    outline: none;
+    border: 2px solid #198e1e !important;
+}
+
+.inp-name {
+    width: 250px !important;
+}
+
+
 /* content two row */
 
 .header-content {
@@ -261,7 +287,7 @@ body {
 }
 /* ====== footer ======== */
 #footer {
-    /* position: absolute; */
+    /* position: fixed; */
     bottom: 0;
     height: 120px;
     width: 100%;
